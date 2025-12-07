@@ -1,14 +1,20 @@
-[project]
-name = "python-geometry"
-version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
-authors = [
-    { name = "olatejulian", email = "julian.lf.olate@gmail.com" }
-]
-requires-python = ">=3.14"
-dependencies = []
-
 [build-system]
-requires = ["uv_build>=0.9.16,<0.10.0"]
 build-backend = "uv_build"
+requires = ["uv_build>=0.9.16,<0.10.0"]
+
+[dependency-groups]
+dev = [
+  "mypy>=1.19.0",
+  "ruff>=0.14.8"
+]
+
+[project]
+authors = [
+  {email = "julian.lf.olate@gmail.com", name = "olatejulian"}
+]
+dependencies = []
+description = "Add your description here"
+name = "python-geometry"
+readme = "README.md"
+requires-python = ">=3.14"
+version = "0.1.0"
