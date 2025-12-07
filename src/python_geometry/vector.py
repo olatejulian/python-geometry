@@ -36,7 +36,9 @@ class Vector:
         return Vector.from_iterable(map(lambda i: self[i] - other[i], range(dimension)))
 
     def __mul__(self, scalar: float) -> Vector:
-        return Vector.from_iterable(map(lambda component: component * scalar, self.__components))
+        return Vector.from_iterable(
+            map(lambda component: component * scalar, self.__components)
+        )
 
     def __rmul__(self, scalar: float) -> Vector:
         return self.__mul__(scalar)
