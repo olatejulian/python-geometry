@@ -3,15 +3,10 @@ build-backend = "uv_build"
 requires = ["uv_build>=0.9.16,<0.10.0"]
 
 [dependency-groups]
-dev = [
-  "mypy>=1.19.0",
-  "ruff>=0.14.8"
-]
+dev = ["mypy>=1.19.0", "pytest>=9.0.2", "ruff>=0.14.8"]
 
 [project]
-authors = [
-  {email = "julian.lf.olate@gmail.com", name = "olatejulian"}
-]
+authors = [{ email = "julian.lf.olate@gmail.com", name = "olatejulian" }]
 dependencies = []
 description = "Add your description here"
 name = "python-geometry"
